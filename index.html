@@ -8,7 +8,9 @@
   </head>
   <body>
     <div class="main">
-      <div class="odin-logo"></div>
+      <div class="odin-logo">
+        <img src="images/odin-lined.png" />
+      </div>
       <div class="signup-form">
         <div class="signup-form-header">
           <p>
@@ -19,22 +21,35 @@
           <p>You know you want to</p>
         </div>
         <div class="signup">
-          <h3>Let's do this!</h3>
+          <h2>Let's do this!</h2>
           <form action="" method="get">
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" />
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <label for="phone-no">Phone Number</label>
-            <input type="tel" name="phone-no" id="phone-no" />
-            <label for="password1">Password</label>
-            <input type="password" name="password1" id="password1" />
-            <label for="password2">Confirm Password</label>
-            <input type="password" name="password2" id="password2" />
-
-            <button type="submit">Create Account</button>
+            <div class="form-row">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" />
+            </div>
+            <div class="form-row">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-row">
+              <label for="phone-no">Phone Number</label>
+              <input type="tel" name="phone-no" id="phone-no" />
+            </div>
+            <div class="form-row">
+              <label for="password1">Password</label>
+              <input type="password" name="password1" id="password1" />
+            </div>
+            <div class="form-row">
+              <label for="password2">Confirm Password</label>
+              <input type="password" name="password2" id="password2" />
+            </div>
+            <div class="form-row">
+              <button type="submit">Create Account</button>
+            </div>
           </form>
           <p>Already have an account? <a href="">Log in</a></p>
         </div>
