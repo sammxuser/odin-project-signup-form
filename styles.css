@@ -51,33 +51,38 @@ body {
   padding-left: 20px;
 }
 
+h2 {
+  font-size: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
 .signup {
   padding-left: 20px;
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-
-.signup h2 {
-  font-size: 30px;
-  padding: 20px 0px 20px 0px;
+  width: 100vw;
+  height: 100vh;
 }
 
 .form-row {
   margin-top: 30px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-size: 25px;
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
 }
 
 .form-row input {
   width: 250px;
-  height: initial;
+  height: 40px;
 }
 
 .front-row label {
-  margin-top: 15px;
+  margin-top: 12px;
+}
+
+/* Desktop only stlying */
+@media only screen and (min-width: 700px) {
 }
