@@ -7,9 +7,5 @@ createButton.addEventListener('click', () => {
 
   if (password !== password2) {
     errorParagraph.textContent = '*Passwords do not match*';
-
-    // password.style.borderColor = 'red';
-    // password2.style.borderColor = 'red';
-    alert(password.style.borderColor);
   }
 });
