@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
     <title>Sign Up Form</title>
   </head>
   <body>
     <div class="main">
       <div class="odin-logo">
-        <img src="images/odin-lined.png" />
+        <img src="images/odin-lined.png" alt="odin-logo" />
+        <h1 class="merriweather-regular">ODIN</h1>
       </div>
       <div class="signup-form">
         <div class="signup-form-header">
@@ -22,39 +30,58 @@
         </div>
         <h2>Let's do this!</h2>
         <div class="signup">
+          <p class="error"></p>
           <form action="" method="get">
-            <div class="form-row">
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name" />
-            </div>
-            <div class="form-row">
-              <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name" />
-            </div>
-            <div class="form-row">
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" />
-            </div>
-            <div class="form-row">
-              <label for="phone-no">PHONE NUMBER</label>
-              <input type="tel" name="phone-no" id="phone-no" />
-            </div>
-            <div class="form-row">
-              <label for="password1">PASSWORD</label>
-              <input type="password" name="password1" id="password1" />
-            </div>
-            <div class="form-row">
-              <label for="password2">CONFIRM PASSWORD</label>
-              <input type="password" name="password2" id="password2" />
-            </div>
-            <div class="form-row">
+            <table>
+              <tr class="table-row">
+                <td>
+                  <div class="form-row">
+                    <label for="first-name">FIRST NAME</label><br />
+                    <input type="text" name="first-name" id="first-name" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-row">
+                    <label for="last-name">LAST NAME</label><br />
+                    <input type="text" name="last-name" id="last-name" />
+                  </div>
+                </td>
+              </tr>
+              <tr class="table-row">
+                <td>
+                  <div class="form-row">
+                    <label for="email">EMAIL</label><br />
+                    <input type="email" name="email" id="email" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-row">
+                    <label for="phone-no">PHONE NUMBER</label><br />
+                    <input type="tel" name="phone-no" id="phone-no" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="form-row">
+                    <label for="password1">PASSWORD</label><br />
+                    <input type="password" name="password1" id="password1" />
+                  </div>
+                </td>
+                <td>
+                  <div class="form-row">
+                    <label for="password2">CONFIRM PASSWORD</label><br />
+                    <input type="password" name="password2" id="password2" />
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="signup-footer">
               <button type="submit">Create Account</button>
+              <p>Already have an account? <a href="">Log in</a></p>
             </div>
           </form>
         </div>
-      </div>
-      <div class="form-footer">
-        <p>Already have an account? <a href="">Log in</a></p>
       </div>
     </div>
   </body>
